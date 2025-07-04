@@ -304,6 +304,10 @@ type TEVAL = class
 ): WideString;
      procedure SQLGETValue(SQLName, FieldName: String;
       var ResultStr: String);
+     function GetParamNamesTilde: WideString;
+function GetParamTypesTilde: WideString;
+function GetParamValuesTilde: WideString;
+
 
 
 end;
@@ -1086,7 +1090,7 @@ begin
  if CallType = 'n' then begin
    f := FncList.Items[FncList.count-1];
 //   axp.dbm.gf.DoDebug.msg('   Calling function ' + f^.fname);
-   CallFunction(f^.Fname, f^.Fparam, f^.FParamCount, S);
+   //CallFunction(f^.Fname, f^.Fparam, f^.FParamCount, S);
 //   axp.dbm.gf.DoDebug.msg('   Result of '+f^.fname +' = '+s);
    if (f^.Fname = 'bulkexecute') and (s <> '') then
      {if axp.dbm.gf.isservice then} raise exception.Create(s);
@@ -3003,6 +3007,54 @@ begin
   finally
     if Assigned(pResult) then
       FreeFireSql(pResult);
+  end;
+end;
+
+function TEVAL.GetParamNamesTilde: WideString;
+var
+  i: Integer;
+  parts: TStringList;
+begin
+  parts := TStringList.Create;
+  try
+    for i := 0 to VarList.Count - 1 do
+      parts.Add(SplitString(VarList[i], '~', 0)); // 0 = name
+    Result := StringReplace(parts.Text, sLineBreak, '~', [rfReplaceAll]);
+    SetLength(Result, Length(Result) - 1); // Remove trailing ~
+  finally
+    parts.Free;
+  end;
+end;
+
+function TEVAL.GetParamTypesTilde: WideString;
+var
+  i: Integer;
+  parts: TStringList;
+begin
+  parts := TStringList.Create;
+  try
+    for i := 0 to VarList.Count - 1 do
+      parts.Add(SplitString(VarList[i], '~', 1)); // 1 = type
+    Result := StringReplace(parts.Text, sLineBreak, '~', [rfReplaceAll]);
+    SetLength(Result, Length(Result) - 1); // Remove trailing ~
+  finally
+    parts.Free;
+  end;
+end;
+
+function TEVAL.GetParamValuesTilde: WideString;
+var
+  i: Integer;
+  parts: TStringList;
+begin
+  parts := TStringList.Create;
+  try
+    for i := 0 to VarList.Count - 1 do
+      parts.Add(SplitString(VarList[i], '~', 2)); // 2 = value
+    Result := StringReplace(parts.Text, sLineBreak, '~', [rfReplaceAll]);
+    SetLength(Result, Length(Result) - 1); // Remove trailing ~
+  finally
+    parts.Free;
   end;
 end;
 

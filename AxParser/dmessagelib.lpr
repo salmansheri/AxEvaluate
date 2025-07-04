@@ -189,7 +189,7 @@ begin
         WriteLog('Eval - SQLText: ' + SQLText);
         WriteLog('Eval - FieldName: ' + FieldName);
 
-        // You must preprocess varlist + types + values from Parser.VarList
+
         OutputStr := Parser.FireSql(
           SQLName,
           SQLText,
@@ -198,7 +198,7 @@ begin
           Parser.GetParamValuesTilde
         );
 
-        // Now extract field
+
         Parser.SQLGETValue(SQLName, FieldName, ResultStr);
         OutputStr := ResultStr;
 

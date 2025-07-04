@@ -161,13 +161,12 @@ end;
 
 procedure Eval(Input: PWideChar; Output: PWideChar; BufSize: Integer); cdecl;
 var
-  OutputStr, ExprValue, SQLName, SQLText: WideString;
+  ExprValue, OutputStr, SQLName, SQLText, FieldName, ResultStr: WideString;
   Regex: TRegExpr;
 begin
   WriteLog('=== Eval called ===');
   ExprValue := WideString(Input);
   WriteLog('Eval - Input expression: ' + ExprValue);
-  LogVarList('Eval START');
 
   if not Assigned(Parser) then
   begin
@@ -176,30 +175,39 @@ begin
   end
   else
   begin
+    // Handle firesql
     Regex := TRegExpr.Create;
     try
-      //Regex.Expression := 'firesql\(\{(.+?)\},\{(.+?)\}\)';
-      //if Regex.Exec(ExprValue) then
-      //begin
-      //  SQLName := Regex.Match[1];
-      //  SQLText := Regex.Match[2];
-      //  WriteLog('Eval - Parsed SQLName: ' + SQLName);
-      //  WriteLog('Eval - Parsed SQLText: ' + SQLText);
-      //  OutputStr := Parser.FireSql(SQLName, SQLText);
-      //  WriteLog('Eval - FireSql result: ' + OutputStr);
-      //end
-      //else
+      Regex.Expression := 'firesql\(\{(.+?)\},\{(.+?)\}\);sqlgetvalue\(\{\1\},\{(.+?)\}\)';
+      if Regex.Exec(ExprValue) then
       begin
-        if Parser.Evaluate(ExprValue) then
-        begin
-          OutputStr := Parser.Value;
-          WriteLog('Eval - Evaluation successful: ' + OutputStr);
-        end
-        else
-        begin
-          OutputStr := Parser.ErrorMsg;
-          WriteLog('Eval - Evaluation failed: ' + OutputStr);
-        end;
+        SQLName := Regex.Match[1];
+        SQLText := Regex.Match[2];
+        FieldName := Regex.Match[3];
+
+        WriteLog('Eval - SQLName: ' + SQLName);
+        WriteLog('Eval - SQLText: ' + SQLText);
+        WriteLog('Eval - FieldName: ' + FieldName);
+
+        // You must preprocess varlist + types + values from Parser.VarList
+        OutputStr := Parser.FireSql(
+          SQLName,
+          SQLText,
+          Parser.GetParamNamesTilde,
+          Parser.GetParamTypesTilde,
+          Parser.GetParamValuesTilde
+        );
+
+        // Now extract field
+        Parser.SQLGETValue(SQLName, FieldName, ResultStr);
+        OutputStr := ResultStr;
+
+        WriteLog('Eval - Final Output: ' + OutputStr);
+      end
+      else
+      begin
+        OutputStr := 'Invalid expression syntax';
+        WriteLog('Eval - Invalid expression');
       end;
     finally
       Regex.Free;
@@ -207,24 +215,10 @@ begin
   end;
 
   if OutputStr = '' then
-  begin
     OutputStr := 'No result.';
-    WriteLog('Eval - Output was empty');
-  end;
 
   StrPLCopy(Output, OutputStr, BufSize - 1);
-  LogVarList('Eval END');
-  WriteLog('Eval - Final output: ' + OutputStr);
-
-  try
-    ResetParser;
-    WriteLog('Eval - ResetParser completed');
-  except
-    on E: Exception do
-      WriteLog('Eval - ResetParser error: ' + E.Message);
-  end;
-
-  WriteLog('=== Eval completed ===');
+  WriteLog('Eval - Response sent');
 end;
 
 procedure RegisterVarInterop(VarName: PWideChar; VarType: WideChar; pValue: PWideChar); cdecl;

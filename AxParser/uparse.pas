@@ -304,6 +304,10 @@ type TEVAL = class
 ): WideString;
      procedure SQLGETValue(SQLName, FieldName: String;
       var ResultStr: String);
+     function GetParamNamesTilde: WideString;
+function GetParamTypesTilde: WideString;
+function GetParamValuesTilde: WideString;
+
 
 
 end;
@@ -3003,6 +3007,65 @@ begin
   finally
     if Assigned(pResult) then
       FreeFireSql(pResult);
+  end;
+end;
+
+function SplitString(const s: string; delimiter: Char; index: Integer): string;
+var
+  parts: TStringArray;
+begin
+  parts := s.Split([delimiter]);
+  if (index >= 0) and (index < Length(parts)) then
+    Result := parts[index]
+  else
+    Result := '';
+end;
+
+function TEVAL.GetParamNamesTilde: WideString;
+var
+  i: Integer;
+  parts: TStringList;
+begin
+  parts := TStringList.Create;
+  try
+    for i := 0 to VarList.Count - 1 do
+      parts.Add(SplitString(VarList[i], '~', 0)); // 0 = name
+    Result := StringReplace(parts.Text, sLineBreak, '~', [rfReplaceAll]);
+    SetLength(Result, Length(Result) - 1); // Remove trailing ~
+  finally
+    parts.Free;
+  end;
+end;
+
+function TEVAL.GetParamTypesTilde: WideString;
+var
+  i: Integer;
+  parts: TStringList;
+begin
+  parts := TStringList.Create;
+  try
+    for i := 0 to VarList.Count - 1 do
+      parts.Add(SplitString(VarList[i], '~', 1)); // 1 = type
+    Result := StringReplace(parts.Text, sLineBreak, '~', [rfReplaceAll]);
+    SetLength(Result, Length(Result) - 1); // Remove trailing ~
+  finally
+    parts.Free;
+  end;
+end;
+
+function TEVAL.GetParamValuesTilde: WideString;
+var
+  i: Integer;
+  parts: TStringList;
+begin
+  parts := TStringList.Create;
+  try
+    for i := 0 to VarList.Count - 1 do
+      parts.Add(SplitString(VarList[i], '~', 2)); // 2 = value
+    Result := StringReplace(parts.Text, sLineBreak, '~', [rfReplaceAll]);
+    SetLength(Result, Length(Result) - 1); // Remove trailing ~
+  finally
+    parts.Free;
   end;
 end;
 

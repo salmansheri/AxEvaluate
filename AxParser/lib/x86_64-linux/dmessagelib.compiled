@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <Compiler Value="/usr/bin/fpc" Date="1704440408"/>
-  <Params Value=" -Tlinux -Px86_64 -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/home/salman/Desktop/AxParser/lib/x86_64-linux -Fu/home/salman/Desktop/AxParser/ -FU/home/salman/Desktop/AxParser/lib/x86_64-linux/ -FE/home/salman/Desktop/AxParser/ -o/home/salman/Desktop/AxParser/libdmessagelib.so dmessagelib.lpr"/>
+  <Params Value=" -Tlinux -Px86_64 -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/home/salman/Desktop/AxEvaluate/AxParser/lib/x86_64-linux -Fu/home/salman/Desktop/AxEvaluate/AxParser/ -FU/home/salman/Desktop/AxEvaluate/AxParser/lib/x86_64-linux/ -FE/home/salman/Desktop/AxEvaluate/AxParser/ -o/home/salman/Desktop/AxEvaluate/AxParser/libdmessagelib.so dmessagelib.lpr"/>
+  <Complete Value="False"/>
 </CONFIG>
