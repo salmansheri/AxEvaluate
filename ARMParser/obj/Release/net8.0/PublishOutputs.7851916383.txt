@@ -1,0 +1,11 @@
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\GetMessage.exe
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\appsettings.json
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\GetMessage.dll
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\GetMessage.deps.json
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\GetMessage.runtimeconfig.json
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\GetMessage.pdb
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\WorkSpace\2025\___VSCode\GetMessage\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

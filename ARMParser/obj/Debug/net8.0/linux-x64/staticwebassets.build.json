@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Cwd16MmQJoVoNZImUvVwFhKQ1hp+sI6a6LBfCViUhWE=",
+  "Source": "GetMessage",
+  "BasePath": "_content/GetMessage",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

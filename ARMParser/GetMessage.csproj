@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<Platforms>AnyCPU</Platforms>
+
+		<!-- Add this to target Linux -->
+		<RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+		<!-- Optional: Self-contained build (false = needs .NET runtime installed) -->	
+		<SelfContained>false</SelfContained>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+	</ItemGroup>
+
+</Project>

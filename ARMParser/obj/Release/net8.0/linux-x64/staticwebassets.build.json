@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "1fUkUIzb53JhEOlaUfScbj2U10jJyMs5INk05nzSS5U=",
+  "Source": "GetMessage",
+  "BasePath": "_content/GetMessage",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

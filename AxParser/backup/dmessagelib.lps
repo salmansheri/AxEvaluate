@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <ManyBuildModesSelection Value="Default,&quot;Linux x64&quot;"/>
+    <BuildModes Active="Linux x64"/>
+    <Units>
+      <Unit>
+        <Filename Value="dmessagelib.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="28" Y="8"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uparse.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UParse"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1071"/>
+        <CursorPos X="4" Y="1089"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ujsonutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uJSONUtils"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="16" Y="39"/>
+        <UsageCount Value="84"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3064" Column="95" TopLine="3030"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3048" Column="17" TopLine="3030"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3056" Column="80" TopLine="3042"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3074" Column="30" TopLine="3044"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="121" Column="26" TopLine="105"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="1162" Column="28" TopLine="1132"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="1346" Column="23" TopLine="1316"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3048" Column="28" TopLine="3045"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3074" Column="30" TopLine="3045"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="305" Column="15"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="1162" Column="28" TopLine="1132"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="1346" Column="23" TopLine="1316"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3048" Column="28" TopLine="3018"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3074" Column="30" TopLine="3044"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="121" Column="26" TopLine="105"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="1169" Column="93" TopLine="154"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="1346" Column="23" TopLine="1316"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3048" Column="28" TopLine="3018"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3074" Column="30" TopLine="3056"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="307" Column="32" TopLine="282"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3052" Column="8" TopLine="3034"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3041" Column="72" TopLine="3035"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3052" Column="8" TopLine="3034"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3073" Column="2" TopLine="3042"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3052" Column="14" TopLine="3034"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3044" Column="28" TopLine="3035"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="3052" Column="8" TopLine="3034"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="12" Column="51"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="180" Column="30" TopLine="153"/>
+      </Position>
+      <Position>
+        <Filename Value="uparse.pas"/>
+        <Caret Line="686" Column="7" TopLine="669"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

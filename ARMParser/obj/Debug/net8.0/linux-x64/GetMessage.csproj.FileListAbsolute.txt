@@ -1,0 +1,106 @@
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/appsettings.Development.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/appsettings.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/appsettings.Development.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/appsettings.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/GetMessage.deps.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/GetMessage.runtimeconfig.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/GetMessage.staticwebassets.endpoints.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/appsettings.Development.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/appsettings.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/GetMessage.deps.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/GetMessage.runtimeconfig.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/GetMessage.staticwebassets.endpoints.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/appsettings.Development.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/appsettings.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/GetMessage.deps.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/GetMessage.runtimeconfig.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/GetMessage.staticwebassets.endpoints.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/appsettings.Development.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/appsettings.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/GetMessage.deps.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/GetMessage.runtimeconfig.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/GetMessage.staticwebassets.endpoints.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/GetMessage
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/GetMessage.deps.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/GetMessage.runtimeconfig.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/GetMessage.dll
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/GetMessage.pdb
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/Microsoft.OpenApi.dll
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/Swashbuckle.AspNetCore.Swagger.dll
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/bin/Debug/net8.0/linux-x64/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.csproj.AssemblyReference.cache
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.GeneratedMSBuildEditorConfig.editorconfig
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.AssemblyInfoInputs.cache
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.AssemblyInfo.cs
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.csproj.CoreCompileInputs.cache
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.MvcApplicationPartsAssemblyInfo.cs
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.MvcApplicationPartsAssemblyInfo.cache
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.sourcelink.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/staticwebassets.build.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/staticwebassets.development.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/staticwebassets/msbuild.GetMessage.Microsoft.AspNetCore.StaticWebAssets.props
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/staticwebassets/msbuild.build.GetMessage.props
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/staticwebassets/msbuild.buildMultiTargeting.GetMessage.props
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/staticwebassets/msbuild.buildTransitive.GetMessage.props
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/staticwebassets.pack.json
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/scopedcss/bundle/GetMessage.styles.css
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.csproj.CopyComplete
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.dll
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/refint/GetMessage.dll
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.pdb
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/GetMessage.genruntimeconfig.cache
+/home/salman/Downloads/GetMessageLinux_.NETCore_12062025 1/GetMessageLinux/obj/Debug/net8.0/linux-x64/ref/GetMessage.dll
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/appsettings.Development.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/appsettings.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/appsettings.Development.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/appsettings.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/GetMessage.deps.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/GetMessage.runtimeconfig.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/GetMessage.staticwebassets.endpoints.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/appsettings.Development.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/appsettings.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/GetMessage.deps.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/GetMessage.runtimeconfig.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/GetMessage.staticwebassets.endpoints.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/appsettings.Development.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/appsettings.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/GetMessage.deps.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/GetMessage.runtimeconfig.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/GetMessage.staticwebassets.endpoints.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/appsettings.Development.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/appsettings.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/GetMessage.deps.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/GetMessage.runtimeconfig.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/publish/publish/publish/publish/GetMessage.staticwebassets.endpoints.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/GetMessage
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/GetMessage.deps.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/GetMessage.runtimeconfig.json
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/GetMessage.dll
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/GetMessage.pdb
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/Microsoft.OpenApi.dll
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/Swashbuckle.AspNetCore.Swagger.dll
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/salman/Downloads/ARMParser/ARMParser/bin/Debug/net8.0/linux-x64/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.csproj.AssemblyReference.cache
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.GeneratedMSBuildEditorConfig.editorconfig
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.AssemblyInfoInputs.cache
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.AssemblyInfo.cs
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.csproj.CoreCompileInputs.cache
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.MvcApplicationPartsAssemblyInfo.cs
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.MvcApplicationPartsAssemblyInfo.cache
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.sourcelink.json
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/staticwebassets.build.json
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/staticwebassets.development.json
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/staticwebassets/msbuild.GetMessage.Microsoft.AspNetCore.StaticWebAssets.props
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/staticwebassets/msbuild.build.GetMessage.props
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/staticwebassets/msbuild.buildMultiTargeting.GetMessage.props
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/staticwebassets/msbuild.buildTransitive.GetMessage.props
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/staticwebassets.pack.json
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/scopedcss/bundle/GetMessage.styles.css
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.csproj.CopyComplete
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.dll
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/refint/GetMessage.dll
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.pdb
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/GetMessage.genruntimeconfig.cache
+/home/salman/Downloads/ARMParser/ARMParser/obj/Debug/net8.0/linux-x64/ref/GetMessage.dll

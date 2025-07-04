@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/salman/Downloads/ARMParser/ARMParser/GetMessage.csproj": {}
+  },
+  "projects": {
+    "/home/salman/Downloads/ARMParser/ARMParser/GetMessage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/salman/Downloads/ARMParser/ARMParser/GetMessage.csproj",
+        "projectName": "GetMessage",
+        "projectPath": "/home/salman/Downloads/ARMParser/ARMParser/GetMessage.csproj",
+        "packagesPath": "/home/salman/.nuget/packages/",
+        "outputPath": "/home/salman/Downloads/ARMParser/ARMParser/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/salman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.17, 8.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.117/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
