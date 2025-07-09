@@ -3,6 +3,7 @@ library dmessagelib;
 uses
   cwstring,
   SysUtils,
+  Classes,
   UParse in 'UParse.pas',
   RegExpr;
 
@@ -189,7 +190,7 @@ begin
         WriteLog('Eval - SQLText: ' + SQLText);
         WriteLog('Eval - FieldName: ' + FieldName);
 
-        // You must preprocess varlist + types + values from Parser.VarList
+
         OutputStr := Parser.FireSql(
           SQLName,
           SQLText,
@@ -198,7 +199,7 @@ begin
           Parser.GetParamValuesTilde
         );
 
-        // Now extract field
+
         Parser.SQLGETValue(SQLName, FieldName, ResultStr);
         OutputStr := ResultStr;
 
@@ -251,6 +252,35 @@ begin
   WriteLog('=== RegisterVar completed ===');
 end;
 
+procedure RegisterVarListInterop(pData: PWideChar); cdecl;
+var
+  DataStr, NameStr, TypeStr, ValueStr: WideString;
+  Items: TStringList;
+  i: Integer;
+begin
+  WriteLog('=== RegisterVarListInterop called ===');
+  DataStr := pData;
+  Items := TStringList.Create;
+  try
+    ExtractStrings(['~'], [], PChar(DataStr), Items);
+    i := 0;
+    while i + 2 < Items.Count do
+    begin
+      NameStr := Items[i];
+      TypeStr := Items[i + 1];
+      ValueStr := Items[i + 2];
+      Parser.RegisterVar(NameStr, TypeStr[1], ValueStr);
+      WriteLog(Format('Registered: %s = %s (%s)', [NameStr, ValueStr, TypeStr]));
+      Inc(i, 3);
+    end;
+  except
+    on E: Exception do
+      WriteLog('ERROR in RegisterVarListInterop: ' + E.Message);
+  end;
+  Items.Free;
+end;
+
+
 procedure CleanupParser;
 begin
   WriteLog('*** CLEANUP PARSER CALLED ***');
@@ -271,7 +301,8 @@ exports
   ProcessMessage2,
   Eval,
   TestEncrypt,
-  RegisterVarInterop name 'RegisterVar';
+  RegisterVarInterop name 'RegisterVar',
+  RegisterVarListInterop;
 
 begin
   WriteLog('*** DLL INITIALIZATION STARTED ***');

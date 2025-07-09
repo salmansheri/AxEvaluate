@@ -302,8 +302,7 @@ type TEVAL = class
    function FireSql(
   coreHandler, aQuery, aParamName, paramType, paramValues: WideString
 ): WideString;
-     procedure SQLGETValue(SQLName, FieldName: String;
-      var ResultStr: String);
+    procedure SQLGETValue(SQLName, FieldName: WideString; var ResultStr: WideString);
      function GetParamNamesTilde: WideString;
 function GetParamTypesTilde: WideString;
 function GetParamValuesTilde: WideString;
@@ -3109,7 +3108,7 @@ begin
 end;
 
 
-procedure TEVal.SQLGETValue(SQLName, FieldName: String; var ResultStr: String);
+procedure TEVal.SQLGETValue(SQLName, FieldName: WideString; var ResultStr: WideString);
 var
   Q: TMemDataset;
   Fld: TField;
@@ -3133,6 +3132,7 @@ begin
 
   ResultStr := Q.FieldByName(FieldName).AsString;
 end;
+
 
 
 //procedure TEVal.SQLGETValue(SQLName, FieldName: String; var ResultStr: String);

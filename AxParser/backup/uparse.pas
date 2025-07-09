@@ -3010,6 +3010,17 @@ begin
   end;
 end;
 
+function SplitString(const s: string; delimiter: Char; index: Integer): string;
+var
+  parts: TStringArray;
+begin
+  parts := s.Split([delimiter]);
+  if (index >= 0) and (index < Length(parts)) then
+    Result := parts[index]
+  else
+    Result := '';
+end;
+
 function TEVAL.GetParamNamesTilde: WideString;
 var
   i: Integer;
@@ -3098,7 +3109,7 @@ begin
 end;
 
 
-procedure TEVal.SQLGETValue(SQLName, FieldName: String; var ResultStr: String);
+procedure TEVal.SQLGETValue(SQLName, FieldName: WideString; var ResultStr: WideString);
 var
   Q: TMemDataset;
   Fld: TField;
@@ -3122,6 +3133,7 @@ begin
 
   ResultStr := Q.FieldByName(FieldName).AsString;
 end;
+
 
 
 //procedure TEVal.SQLGETValue(SQLName, FieldName: String; var ResultStr: String);

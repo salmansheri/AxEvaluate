@@ -20,3 +20,15 @@
 /home/salman/Desktop/Firesql/FireSql/obj/Release/net8.0/linux-x64/refint/FireSql.dll
 /home/salman/Desktop/Firesql/FireSql/obj/Release/net8.0/linux-x64/FireSql.pdb
 /home/salman/Desktop/Firesql/FireSql/obj/Release/net8.0/linux-x64/ref/FireSql.dll
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/bin/Release/net8.0/linux-x64/FireSql.deps.json
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/bin/Release/net8.0/linux-x64/FireSql.dll
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/bin/Release/net8.0/linux-x64/FireSql.pdb
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/Release/net8.0/linux-x64/FireSql.GeneratedMSBuildEditorConfig.editorconfig
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/Release/net8.0/linux-x64/FireSql.AssemblyInfoInputs.cache
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/Release/net8.0/linux-x64/FireSql.AssemblyInfo.cs
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/Release/net8.0/linux-x64/FireSql.csproj.CoreCompileInputs.cache
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/Release/net8.0/linux-x64/FireSql.sourcelink.json
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/Release/net8.0/linux-x64/FireSql.dll
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/Release/net8.0/linux-x64/refint/FireSql.dll
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/Release/net8.0/linux-x64/FireSql.pdb
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/Release/net8.0/linux-x64/ref/FireSql.dll

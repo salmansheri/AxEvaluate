@@ -3,6 +3,7 @@ library dmessagelib;
 uses
   cwstring,
   SysUtils,
+  Classes,
   UParse in 'UParse.pas',
   RegExpr;
 
@@ -251,6 +252,58 @@ begin
   WriteLog('=== RegisterVar completed ===');
 end;
 
+procedure RegisterVarListInterop(pData: PWideChar); cdecl;
+var
+  DataStr, NameStr, TypeStr, ValueStr: WideString;
+  Items: TStringList;
+  i: Integer;
+begin
+  WriteLog('=== RegisterVarListInterop called ===');
+
+  if not Assigned(Parser) then
+  begin
+    WriteLog('Parser not initialized.');
+    Exit;
+  end;
+
+  DataStr := pData;
+  Items := TStringList.Create;
+  try
+    ExtractStrings(['~'], [], PChar(DataStr), Items);
+    if Items.Count mod 3 <> 0 then
+    begin
+      WriteLog('ERROR: Invalid input format. Items count not divisible by 3.');
+      Exit;
+    end;
+
+    i := 0;
+    while i + 2 < Items.Count do
+    begin
+      NameStr := Items[i];
+      TypeStr := Items[i + 1];
+      ValueStr := Items[i + 2];
+
+      if (Length(TypeStr) > 0) then
+      begin
+        Parser.RegisterVar(NameStr, TypeStr[1], ValueStr);
+        WriteLog(Format('Registered: %s = %s (%s)', [NameStr, ValueStr, TypeStr]));
+      end
+      else
+      begin
+        WriteLog('ERROR: TypeStr empty for variable: ' + NameStr);
+      end;
+
+      Inc(i, 3);
+    end;
+  except
+    on E: Exception do
+      WriteLog('ERROR in RegisterVarListInterop: ' + E.Message);
+  end;
+  Items.Free;
+end;
+
+
+
 procedure CleanupParser;
 begin
   WriteLog('*** CLEANUP PARSER CALLED ***');
@@ -271,7 +324,8 @@ exports
   ProcessMessage2,
   Eval,
   TestEncrypt,
-  RegisterVarInterop name 'RegisterVar';
+  RegisterVarInterop name 'RegisterVar',
+  RegisterVarListInterop;
 
 begin
   WriteLog('*** DLL INITIALIZATION STARTED ***');

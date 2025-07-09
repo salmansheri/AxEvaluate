@@ -541,11 +541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/salman/Downloads/ARMParser/ARMParser/GetMessage.csproj",
+      "projectUniqueName": "/home/salman/Desktop/AxEvaluate/ARMParser/GetMessage.csproj",
       "projectName": "GetMessage",
-      "projectPath": "/home/salman/Downloads/ARMParser/ARMParser/GetMessage.csproj",
+      "projectPath": "/home/salman/Desktop/AxEvaluate/ARMParser/GetMessage.csproj",
       "packagesPath": "/home/salman/.nuget/packages/",
-      "outputPath": "/home/salman/Downloads/ARMParser/ARMParser/obj/",
+      "outputPath": "/home/salman/Desktop/AxEvaluate/ARMParser/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/salman/.nuget/NuGet/NuGet.Config"

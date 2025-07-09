@@ -12,6 +12,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FireSql
-build_property.ProjectDir = /home/salman/Desktop/Firesql/FireSql/
+build_property.ProjectDir = /home/salman/Desktop/AxEvaluate/Firesql/FireSql/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false

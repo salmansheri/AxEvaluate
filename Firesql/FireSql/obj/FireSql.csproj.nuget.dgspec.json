@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/salman/Desktop/Firesql/FireSql/FireSql.csproj": {}
+    "/home/salman/Desktop/AxEvaluate/Firesql/FireSql/FireSql.csproj": {}
   },
   "projects": {
-    "/home/salman/Desktop/Firesql/FireSql/FireSql.csproj": {
+    "/home/salman/Desktop/AxEvaluate/Firesql/FireSql/FireSql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/salman/Desktop/Firesql/FireSql/FireSql.csproj",
+        "projectUniqueName": "/home/salman/Desktop/AxEvaluate/Firesql/FireSql/FireSql.csproj",
         "projectName": "FireSql",
-        "projectPath": "/home/salman/Desktop/Firesql/FireSql/FireSql.csproj",
+        "projectPath": "/home/salman/Desktop/AxEvaluate/Firesql/FireSql/FireSql.csproj",
         "packagesPath": "/home/salman/.nuget/packages/",
-        "outputPath": "/home/salman/Desktop/Firesql/FireSql/obj/",
+        "outputPath": "/home/salman/Desktop/AxEvaluate/Firesql/FireSql/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/salman/.nuget/NuGet/NuGet.Config"

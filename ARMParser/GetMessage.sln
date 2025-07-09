@@ -5,7 +5,7 @@ VisualStudioVersion = 17.13.35818.85 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetMessage", "GetMessage.csproj", "{04F74B2A-AA87-4D08-9C45-1CF0A5D85E6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireSql", "..\..\..\Desktop\FireSql\FireSql.csproj", "{BFE9689B-6524-461A-8C73-95CD999217CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireSql", "..\..\..\Desktop\AxEvaluate\Firesql\FireSql\FireSql.csproj", "{BFE9689B-6524-461A-8C73-95CD999217CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

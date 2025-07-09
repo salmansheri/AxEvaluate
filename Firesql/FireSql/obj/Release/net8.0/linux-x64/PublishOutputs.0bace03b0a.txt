@@ -1,0 +1,2 @@
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/bin/Release/net8.0/linux-x64/publish/FireSql.so
+/home/salman/Desktop/AxEvaluate/Firesql/FireSql/bin/Release/net8.0/linux-x64/publish/FireSql.pdb

@@ -55,6 +55,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="UParse"/>
       </Unit>
+      <Unit>
+        <Filename Value="ujsonutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uJSONUtils"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
