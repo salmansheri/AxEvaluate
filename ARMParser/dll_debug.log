@@ -443,3 +443,80 @@
 [2025-07-09 20:19:04.097] CLEANUP START - VarList[5]: year
 [2025-07-09 20:19:04.136] CLEANUP - Parser freed
 [2025-07-09 20:19:04.140] *** CLEANUP PARSER COMPLETED ***
+[2025-07-10 12:17:20.164] DLL INIT - Parser created
+[2025-07-10 12:17:20.170] DLL INIT - VarList Count: 3
+[2025-07-10 12:17:20.171] DLL INIT - VarList[0]: approvalno
+[2025-07-10 12:17:20.171] DLL INIT - VarList[1]: recordid
+[2025-07-10 12:17:20.171] DLL INIT - VarList[2]: approvalstatus
+[2025-07-10 12:17:20.171] *** DLL INITIALIZATION COMPLETED ***
+[2025-07-10 12:17:20.171] === RegisterVar called ===
+[2025-07-10 12:17:20.177] RegisterVar - Name: username, Type: c, Value: admin
+[2025-07-10 12:17:20.177] RegisterVar START - VarList Count: 3
+[2025-07-10 12:17:20.177] RegisterVar START - VarList[0]: approvalno
+[2025-07-10 12:17:20.178] RegisterVar START - VarList[1]: recordid
+[2025-07-10 12:17:20.178] RegisterVar START - VarList[2]: approvalstatus
+[2025-07-10 12:17:20.178] RegisterVar - Registered successfully
+[2025-07-10 12:17:20.178] RegisterVar END - VarList Count: 4
+[2025-07-10 12:17:20.178] RegisterVar END - VarList[0]: approvalno
+[2025-07-10 12:17:20.178] RegisterVar END - VarList[1]: recordid
+[2025-07-10 12:17:20.178] RegisterVar END - VarList[2]: approvalstatus
+[2025-07-10 12:17:20.178] RegisterVar END - VarList[3]: username
+[2025-07-10 12:17:20.178] === RegisterVar completed ===
+[2025-07-10 12:17:20.178] === RegisterVar called ===
+[2025-07-10 12:17:20.178] RegisterVar - Name: company, Type: c, Value: agile
+[2025-07-10 12:17:20.178] RegisterVar START - VarList Count: 4
+[2025-07-10 12:17:20.178] RegisterVar START - VarList[0]: approvalno
+[2025-07-10 12:17:20.178] RegisterVar START - VarList[1]: recordid
+[2025-07-10 12:17:20.178] RegisterVar START - VarList[2]: approvalstatus
+[2025-07-10 12:17:20.178] RegisterVar START - VarList[3]: username
+[2025-07-10 12:17:20.178] RegisterVar - Registered successfully
+[2025-07-10 12:17:20.178] RegisterVar END - VarList Count: 5
+[2025-07-10 12:17:20.178] RegisterVar END - VarList[0]: approvalno
+[2025-07-10 12:17:20.178] RegisterVar END - VarList[1]: recordid
+[2025-07-10 12:17:20.178] RegisterVar END - VarList[2]: approvalstatus
+[2025-07-10 12:17:20.178] RegisterVar END - VarList[3]: username
+[2025-07-10 12:17:20.178] RegisterVar END - VarList[4]: company
+[2025-07-10 12:17:20.178] === RegisterVar completed ===
+[2025-07-10 12:17:20.178] === RegisterVar called ===
+[2025-07-10 12:17:20.178] RegisterVar - Name: year, Type: n, Value: 2025
+[2025-07-10 12:17:20.178] RegisterVar START - VarList Count: 5
+[2025-07-10 12:17:20.178] RegisterVar START - VarList[0]: approvalno
+[2025-07-10 12:17:20.178] RegisterVar START - VarList[1]: recordid
+[2025-07-10 12:17:20.178] RegisterVar START - VarList[2]: approvalstatus
+[2025-07-10 12:17:20.179] RegisterVar START - VarList[3]: username
+[2025-07-10 12:17:20.179] RegisterVar START - VarList[4]: company
+[2025-07-10 12:17:20.179] RegisterVar - Registered successfully
+[2025-07-10 12:17:20.179] RegisterVar END - VarList Count: 6
+[2025-07-10 12:17:20.179] RegisterVar END - VarList[0]: approvalno
+[2025-07-10 12:17:20.179] RegisterVar END - VarList[1]: recordid
+[2025-07-10 12:17:20.179] RegisterVar END - VarList[2]: approvalstatus
+[2025-07-10 12:17:20.179] RegisterVar END - VarList[3]: username
+[2025-07-10 12:17:20.179] RegisterVar END - VarList[4]: company
+[2025-07-10 12:17:20.181] RegisterVar END - VarList[5]: year
+[2025-07-10 12:17:20.181] === RegisterVar completed ===
+[2025-07-10 12:17:20.183] === Eval called ===
+[2025-07-10 12:17:20.184] Eval - Input expression: firesql({getmailid},{select email from axusers where username = :username});sqlgetvalue({getmailid},{email});
+[2025-07-10 12:17:20.185] Eval - SQLName: getmailid
+[2025-07-10 12:17:20.185] Eval - SQLText: select email from axusers where username = :username
+[2025-07-10 12:17:20.187] Eval - FieldName: email
+[2025-07-10 12:17:20.210] Eval - Final Output: user2@example.com
+[2025-07-10 12:17:20.211] Eval - Response sent
+[2025-07-10 12:17:28.646] === RegisterVarListInterop called ===
+[2025-07-10 12:17:28.647] ERROR: Invalid input format. Items count not divisible by 3.
+[2025-07-10 12:17:28.649] === Eval called ===
+[2025-07-10 12:17:28.649] Eval - Input expression: firesql({getmailid},{select email from axusers where username = :username});sqlgetvalue({getmailid},{email});
+[2025-07-10 12:17:28.649] Eval - SQLName: getmailid
+[2025-07-10 12:17:28.649] Eval - SQLText: select email from axusers where username = :username
+[2025-07-10 12:17:28.649] Eval - FieldName: email
+[2025-07-10 12:17:28.650] Eval - Final Output: user2@example.com
+[2025-07-10 12:17:28.650] Eval - Response sent
+[2025-07-10 14:01:12.827] *** CLEANUP PARSER CALLED ***
+[2025-07-10 14:01:12.840] CLEANUP START - VarList Count: 6
+[2025-07-10 14:01:12.841] CLEANUP START - VarList[0]: approvalno
+[2025-07-10 14:01:12.841] CLEANUP START - VarList[1]: recordid
+[2025-07-10 14:01:12.841] CLEANUP START - VarList[2]: approvalstatus
+[2025-07-10 14:01:12.841] CLEANUP START - VarList[3]: username
+[2025-07-10 14:01:12.841] CLEANUP START - VarList[4]: company
+[2025-07-10 14:01:12.841] CLEANUP START - VarList[5]: year
+[2025-07-10 14:01:12.857] CLEANUP - Parser freed
+[2025-07-10 14:01:12.857] *** CLEANUP PARSER COMPLETED ***
