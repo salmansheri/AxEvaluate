@@ -1,68 +1,41 @@
-[2025-07-11 10:06:47.816] DLL INIT - Parser created
-[2025-07-11 10:06:47.826] DLL INIT - VarList Count: 3
-[2025-07-11 10:06:47.826] DLL INIT - VarList[0]: approvalno
-[2025-07-11 10:06:47.826] DLL INIT - VarList[1]: recordid
-[2025-07-11 10:06:47.826] DLL INIT - VarList[2]: approvalstatus
-[2025-07-11 10:06:47.826] *** DLL INITIALIZATION COMPLETED ***
-[2025-07-11 10:06:47.826] === RegisterVar called ===
-[2025-07-11 10:06:47.826] RegisterVar - Name: username, Type: c, Value: admin
-[2025-07-11 10:06:47.826] RegisterVar START - VarList Count: 3
-[2025-07-11 10:06:47.826] RegisterVar START - VarList[0]: approvalno
-[2025-07-11 10:06:47.826] RegisterVar START - VarList[1]: recordid
-[2025-07-11 10:06:47.826] RegisterVar START - VarList[2]: approvalstatus
-[2025-07-11 10:06:47.826] RegisterVar - Registered successfully
-[2025-07-11 10:06:47.826] RegisterVar END - VarList Count: 4
-[2025-07-11 10:06:47.826] RegisterVar END - VarList[0]: approvalno
-[2025-07-11 10:06:47.826] RegisterVar END - VarList[1]: recordid
-[2025-07-11 10:06:47.826] RegisterVar END - VarList[2]: approvalstatus
-[2025-07-11 10:06:47.827] RegisterVar END - VarList[3]: username
-[2025-07-11 10:06:47.827] === RegisterVar completed ===
-[2025-07-11 10:06:47.827] === RegisterVar called ===
-[2025-07-11 10:06:47.827] RegisterVar - Name: company, Type: c, Value: agile
-[2025-07-11 10:06:47.827] RegisterVar START - VarList Count: 4
-[2025-07-11 10:06:47.827] RegisterVar START - VarList[0]: approvalno
-[2025-07-11 10:06:47.827] RegisterVar START - VarList[1]: recordid
-[2025-07-11 10:06:47.827] RegisterVar START - VarList[2]: approvalstatus
-[2025-07-11 10:06:47.827] RegisterVar START - VarList[3]: username
-[2025-07-11 10:06:47.827] RegisterVar - Registered successfully
-[2025-07-11 10:06:47.827] RegisterVar END - VarList Count: 5
-[2025-07-11 10:06:47.827] RegisterVar END - VarList[0]: approvalno
-[2025-07-11 10:06:47.827] RegisterVar END - VarList[1]: recordid
-[2025-07-11 10:06:47.827] RegisterVar END - VarList[2]: approvalstatus
-[2025-07-11 10:06:47.827] RegisterVar END - VarList[3]: username
-[2025-07-11 10:06:47.827] RegisterVar END - VarList[4]: company
-[2025-07-11 10:06:47.827] === RegisterVar completed ===
-[2025-07-11 10:06:47.827] === RegisterVar called ===
-[2025-07-11 10:06:47.827] RegisterVar - Name: year, Type: n, Value: 2025
-[2025-07-11 10:06:47.827] RegisterVar START - VarList Count: 5
-[2025-07-11 10:06:47.827] RegisterVar START - VarList[0]: approvalno
-[2025-07-11 10:06:47.827] RegisterVar START - VarList[1]: recordid
-[2025-07-11 10:06:47.827] RegisterVar START - VarList[2]: approvalstatus
-[2025-07-11 10:06:47.828] RegisterVar START - VarList[3]: username
-[2025-07-11 10:06:47.828] RegisterVar START - VarList[4]: company
-[2025-07-11 10:06:47.828] RegisterVar - Registered successfully
-[2025-07-11 10:06:47.828] RegisterVar END - VarList Count: 6
-[2025-07-11 10:06:47.828] RegisterVar END - VarList[0]: approvalno
-[2025-07-11 10:06:47.828] RegisterVar END - VarList[1]: recordid
-[2025-07-11 10:06:47.828] RegisterVar END - VarList[2]: approvalstatus
-[2025-07-11 10:06:47.828] RegisterVar END - VarList[3]: username
-[2025-07-11 10:06:47.828] RegisterVar END - VarList[4]: company
-[2025-07-11 10:06:47.828] RegisterVar END - VarList[5]: year
-[2025-07-11 10:06:47.828] === RegisterVar completed ===
-[2025-07-11 10:06:47.830] === Eval called ===
-[2025-07-11 10:06:47.831] Eval - Input expression: firesql({getmailid},{select email from axusers where username = :username});sqlgetvalue({getmailid},{email});
-[2025-07-11 10:06:47.831] Eval - SQLName: getmailid
-[2025-07-11 10:06:47.831] Eval - SQLText: select email from axusers where username = :username
-[2025-07-11 10:06:47.831] Eval - FieldName: email
-[2025-07-11 10:06:47.855] Eval - Final Output: user2@example.com
-[2025-07-11 10:06:47.855] Eval - Response sent
-[2025-07-11 11:15:05.863] *** CLEANUP PARSER CALLED ***
-[2025-07-11 11:15:05.878] CLEANUP START - VarList Count: 6
-[2025-07-11 11:15:05.879] CLEANUP START - VarList[0]: approvalno
-[2025-07-11 11:15:05.880] CLEANUP START - VarList[1]: recordid
-[2025-07-11 11:15:05.880] CLEANUP START - VarList[2]: approvalstatus
-[2025-07-11 11:15:05.880] CLEANUP START - VarList[3]: username
-[2025-07-11 11:15:05.880] CLEANUP START - VarList[4]: company
-[2025-07-11 11:15:05.880] CLEANUP START - VarList[5]: year
-[2025-07-11 11:15:05.899] CLEANUP - Parser freed
-[2025-07-11 11:15:05.899] *** CLEANUP PARSER COMPLETED ***
+[2025-07-11 13:56:14.867] *** CLEANUP PARSER CALLED ***
+[2025-07-11 13:56:14.867] CLEANUP START - VarList Count: 6
+[2025-07-11 13:56:14.867] CLEANUP START - VarList[0]: approvalno
+[2025-07-11 13:56:14.867] CLEANUP START - VarList[1]: recordid
+[2025-07-11 13:56:14.867] CLEANUP START - VarList[2]: approvalstatus
+[2025-07-11 13:56:14.868] CLEANUP START - VarList[3]: username
+[2025-07-11 13:56:14.868] CLEANUP START - VarList[4]: company
+[2025-07-11 13:56:14.868] CLEANUP START - VarList[5]: year
+[2025-07-11 13:56:14.884] CLEANUP - Parser freed
+[2025-07-11 13:56:14.884] *** CLEANUP PARSER COMPLETED ***
+[2025-07-11 13:56:41.491] DLL INIT - Parser created
+[2025-07-11 13:56:41.491] DLL INIT - VarList Count: 3
+[2025-07-11 13:56:41.491] DLL INIT - VarList[0]: approvalno
+[2025-07-11 13:56:41.491] DLL INIT - VarList[1]: recordid
+[2025-07-11 13:56:41.491] DLL INIT - VarList[2]: approvalstatus
+[2025-07-11 13:56:41.491] *** DLL INITIALIZATION COMPLETED ***
+[2025-07-11 13:56:41.491] === RegisterVarJsonInterop called ===
+[2025-07-11 13:56:41.491] Raw JSON Input: {"username":"c~admin","company":"c~agile","year":"n~2025"}
+[2025-07-11 13:56:41.497] Raw Pair: username=c~admin
+[2025-07-11 13:56:41.497] Registered: username = admin (c)
+[2025-07-11 13:56:41.497] Raw Pair: company=c~agile
+[2025-07-11 13:56:41.498] Registered: company = agile (c)
+[2025-07-11 13:56:41.499] Raw Pair: year=n~2025
+[2025-07-11 13:56:41.504] Registered: year = 2025 (n)
+[2025-07-11 13:56:41.510] === Eval called ===
+[2025-07-11 13:56:41.510] Eval - Input expression: firesql({getmailid},{select email from axusers where username = :username});sqlgetvalue({getmailid},{email});
+[2025-07-11 13:56:41.510] Eval - SQLName: getmailid
+[2025-07-11 13:56:41.510] Eval - SQLText: select email from axusers where username = :username
+[2025-07-11 13:56:41.510] Eval - FieldName: email
+[2025-07-11 13:56:41.520] Eval - Final Output: user2@example.com
+[2025-07-11 13:56:41.520] Eval - Response sent
+[2025-07-11 16:03:54.333] *** CLEANUP PARSER CALLED ***
+[2025-07-11 16:03:54.350] CLEANUP START - VarList Count: 6
+[2025-07-11 16:03:54.355] CLEANUP START - VarList[0]: approvalno
+[2025-07-11 16:03:54.356] CLEANUP START - VarList[1]: recordid
+[2025-07-11 16:03:54.356] CLEANUP START - VarList[2]: approvalstatus
+[2025-07-11 16:03:54.356] CLEANUP START - VarList[3]: username
+[2025-07-11 16:03:54.357] CLEANUP START - VarList[4]: company
+[2025-07-11 16:03:54.357] CLEANUP START - VarList[5]: year
+[2025-07-11 16:03:54.368] CLEANUP - Parser freed
+[2025-07-11 16:03:54.368] *** CLEANUP PARSER COMPLETED ***

@@ -228,7 +228,7 @@ namespace GetMessage.Controllers
                 DllHelper.RegisterVarListInterop(payload);
 
                 // Now call Eval
-                string expression = request.axEvaluate.expr.value;
+                string expression = request?.axEvaluate?.expr?.value!;
                 var outputBuffer = new StringBuilder(2048);
                 Eval(expression, outputBuffer, outputBuffer.Capacity);
 
