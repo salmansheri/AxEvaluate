@@ -49,3 +49,11 @@ Copy
 Edit
 dotnet publish -c Release -r linux-x64 --self-contained true -o ./publish
 This will generate everything needed even if .NET is not installed on the server.
+
+
+
+# Run this command if dll not found error occurs 
+
+```bash
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)/bin/Debug/net8.0/linux-x64
+```

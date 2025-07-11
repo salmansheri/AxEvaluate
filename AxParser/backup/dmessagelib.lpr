@@ -5,7 +5,9 @@ uses
   SysUtils,
   Classes,
   UParse in 'UParse.pas',
-  RegExpr;
+  RegExpr,
+  fpjson,
+  jsonparser;
 
 var
   Parser: TEVAL = nil;
@@ -259,18 +261,40 @@ var
   i: Integer;
 begin
   WriteLog('=== RegisterVarListInterop called ===');
+
+  if not Assigned(Parser) then
+  begin
+    WriteLog('Parser not initialized.');
+    Exit;
+  end;
+
   DataStr := pData;
   Items := TStringList.Create;
   try
     ExtractStrings(['~'], [], PChar(DataStr), Items);
+    if Items.Count mod 3 <> 0 then
+    begin
+      WriteLog('ERROR: Invalid input format. Items count not divisible by 3.');
+      Exit;
+    end;
+
     i := 0;
     while i + 2 < Items.Count do
     begin
       NameStr := Items[i];
       TypeStr := Items[i + 1];
       ValueStr := Items[i + 2];
-      Parser.RegisterVar(NameStr, TypeStr[1], ValueStr);
-      WriteLog(Format('Registered: %s = %s (%s)', [NameStr, ValueStr, TypeStr]));
+
+      if (Length(TypeStr) > 0) then
+      begin
+        Parser.RegisterVar(NameStr, TypeStr[1], ValueStr);
+        WriteLog(Format('Registered: %s = %s (%s)', [NameStr, ValueStr, TypeStr]));
+      end
+      else
+      begin
+        WriteLog('ERROR: TypeStr empty for variable: ' + NameStr);
+      end;
+
       Inc(i, 3);
     end;
   except
@@ -279,6 +303,64 @@ begin
   end;
   Items.Free;
 end;
+
+procedure RegisterVarJsonInterop(pJson: PWideChar); cdecl;
+var
+  JSONStr, VarName, RawValue, VarType, VarVal: WideString;
+  JSONObject: TJSONObject;
+  i: Integer;
+
+begin
+  WriteLog('=== RegisterVarJsonInterop called ===');
+
+  if not Assigned(Parser) then
+  begin
+    WriteLog('Parser not initialized');
+    Exit;
+  end
+
+  try
+    JSONStr := pJson;
+    WriteLog('Raw JSON Input: ' + JSONStr);
+
+    JSONObject := GetJSON(UTF8Encode(JSONStr)) as TJSONObject;
+
+    try
+      for i:=0 to JSONObject.Count - 1 do
+      begin
+        VarName := JSONObject.Names[i];
+        RawValue := JSONObject.Items[i].AsString;
+        WriteLog('Raw Pair: ' + VarName + '=' + RawValue);
+
+        if (Length(RawValue) > 2) and (RawValue[2] = '~') then
+        begin
+          VarType := RawValue[1];
+          VarVal := Copy(RawValue, 3, Length(RawValue));
+        end
+        else
+        begin
+          VarType := 'C';
+          VarVal:= RawValue;
+        end;
+        Parser.RegisterVar(VarName, VarType[1], VarVal);
+         WriteLog(Format('Registered: %s = %s (%s)', [VarName, VarVal, VarType]));
+
+      end;
+      finally
+        JSONObject.Free;
+      end;
+
+    except
+      on E: Exception do
+         WriteLog('Error in RegisterVarJsonInterop: ' + E.Message);
+    end;
+
+end;
+
+
+
+
+
 
 
 procedure CleanupParser;
@@ -302,7 +384,8 @@ exports
   Eval,
   TestEncrypt,
   RegisterVarInterop name 'RegisterVar',
-  RegisterVarListInterop;
+  RegisterVarListInterop,
+  RegisterVarJsonInterop;
 
 begin
   WriteLog('*** DLL INITIALIZATION STARTED ***');

@@ -162,9 +162,9 @@ namespace GetMessage.Controllers
                         }
                     }
 
-                    DllHelper.RegisterVar(name, varType, value); 
-                
-                    
+                    DllHelper.RegisterVar(name, varType, value);
+
+
 
 
                 }
@@ -180,74 +180,107 @@ namespace GetMessage.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { status = "Failed", Message = ex.Message }); 
+                return StatusCode(500, new { status = "Failed", Message = ex.Message });
             }
         }
 
 
         [HttpPost("AxEvaluateList")]
-public IActionResult AxEvaluateList([FromBody] AxEvaluateRequestDto request)
-{
-    try
-    {
-        var vars = request?.axEvaluate?.vars;
-        if (vars == null || vars.Count == 0)
-            return BadRequest(new { status = "Invalid", message = "No variables provided." });
-
-        // Build tilde-delimited string for RegisterVarListInterop
-        var flatList = new List<string>();
-
-        foreach (var kvp in vars)
+        public IActionResult AxEvaluateList([FromBody] AxEvaluateRequestDto request)
         {
-            string name = kvp.Key;
-            string raw = kvp.Value;
-            string type = "c"; // default
-            string value = "";
-
-            if (raw.Contains("~"))
+            try
             {
-                var parts = raw.Split('~', 2);
-                if (parts.Length == 2)
+                var vars = request?.axEvaluate?.vars;
+                if (vars == null || vars.Count == 0)
+                    return BadRequest(new { status = "Invalid", message = "No variables provided." });
+
+                // Build tilde-delimited string for RegisterVarListInterop
+                var flatList = new List<string>();
+
+                foreach (var kvp in vars)
                 {
-                    type = parts[0].ToLower();
-                    value = parts[1];
-                }
-            }
-            else
-            {
-                value = raw;
-                type = double.TryParse(raw, out _) ? "n" : "c";
-            }
+                    string name = kvp.Key;
+                    string raw = kvp.Value;
+                    string type = "c"; // default
+                    string value = "";
 
-            flatList.Add(name);
-            flatList.Add(type);
-            flatList.Add(value);
+                    if (raw.Contains("~"))
+                    {
+                        var parts = raw.Split('~', 2);
+                        if (parts.Length == 2)
+                        {
+                            type = parts[0].ToLower();
+                            value = parts[1];
+                        }
+                    }
+                    else
+                    {
+                        value = raw;
+                        type = double.TryParse(raw, out _) ? "n" : "c";
+                    }
+
+                    flatList.Add(name);
+                    flatList.Add(type);
+                    flatList.Add(value);
+                }
+
+                string payload = string.Join("~", flatList);
+                DllHelper.RegisterVarListInterop(payload);
+
+                // Now call Eval
+                string expression = request.axEvaluate.expr.value;
+                var outputBuffer = new StringBuilder(2048);
+                Eval(expression, outputBuffer, outputBuffer.Capacity);
+
+                return Ok(new
+                {
+                    status = "Success",
+                    expression,
+                    result = outputBuffer.ToString().TrimEnd('\0')
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    status = "Failed",
+                    message = ex.Message
+                });
+            }
         }
 
-        string payload = string.Join("~", flatList);
-        DllHelper.RegisterVarListInterop(payload);
-
-        // Now call Eval
-        string expression = request.axEvaluate.expr.value;
-        var outputBuffer = new StringBuilder(2048);
-        Eval(expression, outputBuffer, outputBuffer.Capacity);
-
-        return Ok(new
+        [HttpPost("AxEvaluateJson")]
+        public IActionResult AxEvaluateJson([FromBody] AxEvaluateRequestDto request)
         {
-            status = "Success",
-            expression,
-            result = outputBuffer.ToString().TrimEnd('\0')
-        });
-    }
-    catch (Exception ex)
-    {
-        return StatusCode(500, new
-        {
-            status = "Failed",
-            message = ex.Message
-        });
-    }
-}
+            try
+            {
+                var vars = request?.axEvaluate?.vars;
+                if (vars == null || vars.Count == 0) return BadRequest(new { status = "Invalid", message = "No variables provided" });
+
+                string jsonPayload = System.Text.Json.JsonSerializer.Serialize(vars);
+
+                DllHelper.RegisterVarJsonInterop(jsonPayload);
+
+                string expression = request?.axEvaluate?.expr?.value!;
+
+                var outputBuffer = new StringBuilder(2048);
+
+                Eval(expression, outputBuffer, outputBuffer.Capacity); 
+
+                return Ok(new
+                {
+                    status = "Success",
+                    expression,
+                    result = outputBuffer.ToString().TrimEnd('\0')
+                });  
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { status = "Failed", message = ex.Message });
+            }
+        }
+
+
 
 
 

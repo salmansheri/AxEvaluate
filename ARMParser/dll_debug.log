@@ -1,445 +1,68 @@
-[2025-06-20 16:32:46.204] DLL INIT - Parser created
-[2025-06-20 16:32:46.204] DLL INIT - VarList Count: 3
-[2025-06-20 16:32:46.204] DLL INIT - VarList[0]: approvalno
-[2025-06-20 16:32:46.204] DLL INIT - VarList[1]: recordid
-[2025-06-20 16:32:46.204] DLL INIT - VarList[2]: approvalstatus
-[2025-06-20 16:32:46.205] *** DLL INITIALIZATION COMPLETED ***
-[2025-06-20 16:32:46.205] === RegisterVar called ===
-[2025-06-20 16:32:46.205] RegisterVar - Name: company, Type: c, Value: AGL
-[2025-06-20 16:32:46.206] RegisterVar START - VarList Count: 3
-[2025-06-20 16:32:46.206] RegisterVar START - VarList[0]: approvalno
-[2025-06-20 16:32:46.206] RegisterVar START - VarList[1]: recordid
-[2025-06-20 16:32:46.206] RegisterVar START - VarList[2]: approvalstatus
-[2025-06-20 16:32:46.206] RegisterVar - Registered successfully
-[2025-06-20 16:32:46.206] RegisterVar END - VarList Count: 4
-[2025-06-20 16:32:46.207] RegisterVar END - VarList[0]: approvalno
-[2025-06-20 16:32:46.207] RegisterVar END - VarList[1]: recordid
-[2025-06-20 16:32:46.207] RegisterVar END - VarList[2]: approvalstatus
-[2025-06-20 16:32:46.207] RegisterVar END - VarList[3]: company
-[2025-06-20 16:32:46.207] === RegisterVar completed ===
-[2025-06-20 16:32:46.210] === Eval called ===
-[2025-06-20 16:32:46.212] Eval - Input expression: iif(company={AGL}, "Company matched", "Wrong company")
-[2025-06-20 16:32:46.212] Eval START - VarList Count: 4
-[2025-06-20 16:32:46.212] Eval START - VarList[0]: approvalno
-[2025-06-20 16:32:46.212] Eval START - VarList[1]: recordid
-[2025-06-20 16:32:46.212] Eval START - VarList[2]: approvalstatus
-[2025-06-20 16:32:46.212] Eval START - VarList[3]: company
-[2025-06-20 16:32:46.214] Eval - Evaluation successful: Company matched
-[2025-06-20 16:32:46.214] Eval END - VarList Count: 4
-[2025-06-20 16:32:46.214] Eval END - VarList[0]: approvalno
-[2025-06-20 16:32:46.214] Eval END - VarList[1]: recordid
-[2025-06-20 16:32:46.214] Eval END - VarList[2]: approvalstatus
-[2025-06-20 16:32:46.214] Eval END - VarList[3]: company
-[2025-06-20 16:32:46.215] Eval - Final output: Company matched
-[2025-06-20 16:32:46.216] *** RESET PARSER CALLED ***
-[2025-06-20 16:32:46.216] RESET START - VarList Count: 4
-[2025-06-20 16:32:46.216] RESET START - VarList[0]: approvalno
-[2025-06-20 16:32:46.216] RESET START - VarList[1]: recordid
-[2025-06-20 16:32:46.216] RESET START - VarList[2]: approvalstatus
-[2025-06-20 16:32:46.216] RESET START - VarList[3]: company
-[2025-06-20 16:32:46.216] RESET - Freeing existing parser
-[2025-06-20 16:32:46.216] RESET - Existing parser freed successfully
-[2025-06-20 16:32:46.216] RESET - New parser created successfully
-[2025-06-20 16:32:46.217] RESET END - VarList Count: 3
-[2025-06-20 16:32:46.217] RESET END - VarList[0]: approvalno
-[2025-06-20 16:32:46.217] RESET END - VarList[1]: recordid
-[2025-06-20 16:32:46.217] RESET END - VarList[2]: approvalstatus
-[2025-06-20 16:32:46.217] *** RESET PARSER COMPLETED ***
-[2025-06-20 16:32:46.217] Eval - ResetParser completed
-[2025-06-20 16:32:46.217] === Eval completed ===
-[2025-06-20 16:33:30.586] === Eval called ===
-[2025-06-20 16:33:30.586] Eval - Input expression: firesql({mysql1},{select username from axusers})
-[2025-06-20 16:33:30.586] Eval START - VarList Count: 3
-[2025-06-20 16:33:30.586] Eval START - VarList[0]: approvalno
-[2025-06-20 16:33:30.586] Eval START - VarList[1]: recordid
-[2025-06-20 16:33:30.586] Eval START - VarList[2]: approvalstatus
-[2025-06-20 16:33:30.587] Eval - Parsed SQLName: mysql1
-[2025-06-20 16:33:30.587] Eval - Parsed SQLText: select username from axusers
-[2025-06-20 16:33:30.605] Eval - FireSql result: {m},{s} | cometime: 2025-06-20 16:33:30
-[2025-06-20 16:33:30.605] Eval END - VarList Count: 3
-[2025-06-20 16:33:30.606] Eval END - VarList[0]: approvalno
-[2025-06-20 16:33:30.607] Eval END - VarList[1]: recordid
-[2025-06-20 16:33:30.607] Eval END - VarList[2]: approvalstatus
-[2025-06-20 16:33:30.608] Eval - Final output: {m},{s} | cometime: 2025-06-20 16:33:30
-[2025-06-20 16:33:30.608] *** RESET PARSER CALLED ***
-[2025-06-20 16:33:30.608] RESET START - VarList Count: 3
-[2025-06-20 16:33:30.608] RESET START - VarList[0]: approvalno
-[2025-06-20 16:33:30.608] RESET START - VarList[1]: recordid
-[2025-06-20 16:33:30.608] RESET START - VarList[2]: approvalstatus
-[2025-06-20 16:33:30.608] RESET - Freeing existing parser
-[2025-06-20 16:33:30.609] RESET - Existing parser freed successfully
-[2025-06-20 16:33:30.609] RESET - New parser created successfully
-[2025-06-20 16:33:30.609] RESET END - VarList Count: 3
-[2025-06-20 16:33:30.609] RESET END - VarList[0]: approvalno
-[2025-06-20 16:33:30.609] RESET END - VarList[1]: recordid
-[2025-06-20 16:33:30.609] RESET END - VarList[2]: approvalstatus
-[2025-06-20 16:33:30.609] *** RESET PARSER COMPLETED ***
-[2025-06-20 16:33:30.609] Eval - ResetParser completed
-[2025-06-20 16:33:30.610] === Eval completed ===
-[2025-06-20 16:36:12.882] *** CLEANUP PARSER CALLED ***
-[2025-06-20 16:36:12.883] CLEANUP START - VarList Count: 3
-[2025-06-20 16:36:12.883] CLEANUP START - VarList[0]: approvalno
-[2025-06-20 16:36:12.883] CLEANUP START - VarList[1]: recordid
-[2025-06-20 16:36:12.883] CLEANUP START - VarList[2]: approvalstatus
-[2025-06-20 16:36:12.884] CLEANUP - Parser freed
-[2025-06-20 16:36:12.884] *** CLEANUP PARSER COMPLETED ***
-[2025-06-20 16:52:59.002] DLL INIT - Parser created
-[2025-06-20 16:52:59.006] DLL INIT - VarList Count: 3
-[2025-06-20 16:52:59.006] DLL INIT - VarList[0]: approvalno
-[2025-06-20 16:52:59.006] DLL INIT - VarList[1]: recordid
-[2025-06-20 16:52:59.006] DLL INIT - VarList[2]: approvalstatus
-[2025-06-20 16:52:59.006] *** DLL INITIALIZATION COMPLETED ***
-[2025-06-20 16:52:59.007] === Eval called ===
-[2025-06-20 16:52:59.007] Eval - Input expression: firesql({mysql1},{select username from axusers})
-[2025-06-20 16:52:59.007] Eval START - VarList Count: 3
-[2025-06-20 16:52:59.007] Eval START - VarList[0]: approvalno
-[2025-06-20 16:52:59.007] Eval START - VarList[1]: recordid
-[2025-06-20 16:52:59.007] Eval START - VarList[2]: approvalstatus
-[2025-06-20 16:52:59.007] Eval - Parsed SQLName: mysql1
-[2025-06-20 16:52:59.007] Eval - Parsed SQLText: select username from axusers
-[2025-06-20 16:52:59.033] Eval - FireSql result: {mysql1},{select username from axusers} | cometime: 2025-06-20 16:52:59
-[2025-06-20 16:52:59.033] Eval END - VarList Count: 3
-[2025-06-20 16:52:59.033] Eval END - VarList[0]: approvalno
-[2025-06-20 16:52:59.033] Eval END - VarList[1]: recordid
-[2025-06-20 16:52:59.033] Eval END - VarList[2]: approvalstatus
-[2025-06-20 16:52:59.033] Eval - Final output: {mysql1},{select username from axusers} | cometime: 2025-06-20 16:52:59
-[2025-06-20 16:52:59.033] *** RESET PARSER CALLED ***
-[2025-06-20 16:52:59.033] RESET START - VarList Count: 3
-[2025-06-20 16:52:59.034] RESET START - VarList[0]: approvalno
-[2025-06-20 16:52:59.034] RESET START - VarList[1]: recordid
-[2025-06-20 16:52:59.034] RESET START - VarList[2]: approvalstatus
-[2025-06-20 16:52:59.034] RESET - Freeing existing parser
-[2025-06-20 16:52:59.034] RESET - Existing parser freed successfully
-[2025-06-20 16:52:59.034] RESET - New parser created successfully
-[2025-06-20 16:52:59.034] RESET END - VarList Count: 3
-[2025-06-20 16:52:59.034] RESET END - VarList[0]: approvalno
-[2025-06-20 16:52:59.035] RESET END - VarList[1]: recordid
-[2025-06-20 16:52:59.035] RESET END - VarList[2]: approvalstatus
-[2025-06-20 16:52:59.035] *** RESET PARSER COMPLETED ***
-[2025-06-20 16:52:59.035] Eval - ResetParser completed
-[2025-06-20 16:52:59.035] === Eval completed ===
-[2025-06-20 16:57:00.849] === RegisterVar called ===
-[2025-06-20 16:57:00.849] RegisterVar - Name: X, Type: N, Value: 100
-[2025-06-20 16:57:00.849] RegisterVar START - VarList Count: 3
-[2025-06-20 16:57:00.849] RegisterVar START - VarList[0]: approvalno
-[2025-06-20 16:57:00.849] RegisterVar START - VarList[1]: recordid
-[2025-06-20 16:57:00.849] RegisterVar START - VarList[2]: approvalstatus
-[2025-06-20 16:57:00.850] RegisterVar - Registered successfully
-[2025-06-20 16:57:00.850] RegisterVar END - VarList Count: 4
-[2025-06-20 16:57:00.850] RegisterVar END - VarList[0]: approvalno
-[2025-06-20 16:57:00.850] RegisterVar END - VarList[1]: recordid
-[2025-06-20 16:57:00.850] RegisterVar END - VarList[2]: approvalstatus
-[2025-06-20 16:57:00.850] RegisterVar END - VarList[3]: x
-[2025-06-20 16:57:00.850] === RegisterVar completed ===
-[2025-06-20 16:57:00.850] === RegisterVar called ===
-[2025-06-20 16:57:00.850] RegisterVar - Name: Y, Type: N, Value: 200
-[2025-06-20 16:57:00.850] RegisterVar START - VarList Count: 4
-[2025-06-20 16:57:00.850] RegisterVar START - VarList[0]: approvalno
-[2025-06-20 16:57:00.850] RegisterVar START - VarList[1]: recordid
-[2025-06-20 16:57:00.850] RegisterVar START - VarList[2]: approvalstatus
-[2025-06-20 16:57:00.850] RegisterVar START - VarList[3]: x
-[2025-06-20 16:57:00.850] RegisterVar - Registered successfully
-[2025-06-20 16:57:00.850] RegisterVar END - VarList Count: 5
-[2025-06-20 16:57:00.850] RegisterVar END - VarList[0]: approvalno
-[2025-06-20 16:57:00.850] RegisterVar END - VarList[1]: recordid
-[2025-06-20 16:57:00.850] RegisterVar END - VarList[2]: approvalstatus
-[2025-06-20 16:57:00.850] RegisterVar END - VarList[3]: x
-[2025-06-20 16:57:00.850] RegisterVar END - VarList[4]: y
-[2025-06-20 16:57:00.850] === RegisterVar completed ===
-[2025-06-20 16:57:00.850] === Eval called ===
-[2025-06-20 16:57:00.851] Eval - Input expression: X+Y
-[2025-06-20 16:57:00.851] Eval START - VarList Count: 5
-[2025-06-20 16:57:00.851] Eval START - VarList[0]: approvalno
-[2025-06-20 16:57:00.851] Eval START - VarList[1]: recordid
-[2025-06-20 16:57:00.851] Eval START - VarList[2]: approvalstatus
-[2025-06-20 16:57:00.851] Eval START - VarList[3]: x
-[2025-06-20 16:57:00.851] Eval START - VarList[4]: y
-[2025-06-20 16:57:00.851] Eval - Evaluation successful: 300
-[2025-06-20 16:57:00.851] Eval END - VarList Count: 5
-[2025-06-20 16:57:00.851] Eval END - VarList[0]: approvalno
-[2025-06-20 16:57:00.852] Eval END - VarList[1]: recordid
-[2025-06-20 16:57:00.852] Eval END - VarList[2]: approvalstatus
-[2025-06-20 16:57:00.852] Eval END - VarList[3]: x
-[2025-06-20 16:57:00.852] Eval END - VarList[4]: y
-[2025-06-20 16:57:00.852] Eval - Final output: 300
-[2025-06-20 16:57:00.852] *** RESET PARSER CALLED ***
-[2025-06-20 16:57:00.852] RESET START - VarList Count: 5
-[2025-06-20 16:57:00.852] RESET START - VarList[0]: approvalno
-[2025-06-20 16:57:00.852] RESET START - VarList[1]: recordid
-[2025-06-20 16:57:00.852] RESET START - VarList[2]: approvalstatus
-[2025-06-20 16:57:00.852] RESET START - VarList[3]: x
-[2025-06-20 16:57:00.852] RESET START - VarList[4]: y
-[2025-06-20 16:57:00.852] RESET - Freeing existing parser
-[2025-06-20 16:57:00.852] RESET - Existing parser freed successfully
-[2025-06-20 16:57:00.852] RESET - New parser created successfully
-[2025-06-20 16:57:00.852] RESET END - VarList Count: 3
-[2025-06-20 16:57:00.852] RESET END - VarList[0]: approvalno
-[2025-06-20 16:57:00.852] RESET END - VarList[1]: recordid
-[2025-06-20 16:57:00.852] RESET END - VarList[2]: approvalstatus
-[2025-06-20 16:57:00.853] *** RESET PARSER COMPLETED ***
-[2025-06-20 16:57:00.853] Eval - ResetParser completed
-[2025-06-20 16:57:00.853] === Eval completed ===
-[2025-06-20 16:57:34.211] === RegisterVar called ===
-[2025-06-20 16:57:34.211] RegisterVar - Name: username, Type: c, Value: karthik
-[2025-06-20 16:57:34.211] RegisterVar START - VarList Count: 3
-[2025-06-20 16:57:34.211] RegisterVar START - VarList[0]: approvalno
-[2025-06-20 16:57:34.211] RegisterVar START - VarList[1]: recordid
-[2025-06-20 16:57:34.211] RegisterVar START - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.211] RegisterVar - Registered successfully
-[2025-06-20 16:57:34.212] RegisterVar END - VarList Count: 4
-[2025-06-20 16:57:34.212] RegisterVar END - VarList[0]: approvalno
-[2025-06-20 16:57:34.213] RegisterVar END - VarList[1]: recordid
-[2025-06-20 16:57:34.213] RegisterVar END - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.214] RegisterVar END - VarList[3]: username
-[2025-06-20 16:57:34.214] === RegisterVar completed ===
-[2025-06-20 16:57:34.214] === RegisterVar called ===
-[2025-06-20 16:57:34.214] RegisterVar - Name: company, Type: c, Value: AGL
-[2025-06-20 16:57:34.214] RegisterVar START - VarList Count: 4
-[2025-06-20 16:57:34.214] RegisterVar START - VarList[0]: approvalno
-[2025-06-20 16:57:34.214] RegisterVar START - VarList[1]: recordid
-[2025-06-20 16:57:34.214] RegisterVar START - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.214] RegisterVar START - VarList[3]: username
-[2025-06-20 16:57:34.214] RegisterVar - Registered successfully
-[2025-06-20 16:57:34.214] RegisterVar END - VarList Count: 5
-[2025-06-20 16:57:34.214] RegisterVar END - VarList[0]: approvalno
-[2025-06-20 16:57:34.215] RegisterVar END - VarList[1]: recordid
-[2025-06-20 16:57:34.215] RegisterVar END - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.215] RegisterVar END - VarList[3]: username
-[2025-06-20 16:57:34.215] RegisterVar END - VarList[4]: company
-[2025-06-20 16:57:34.215] === RegisterVar completed ===
-[2025-06-20 16:57:34.215] === RegisterVar called ===
-[2025-06-20 16:57:34.215] RegisterVar - Name: location, Type: c, Value: CBE
-[2025-06-20 16:57:34.215] RegisterVar START - VarList Count: 5
-[2025-06-20 16:57:34.215] RegisterVar START - VarList[0]: approvalno
-[2025-06-20 16:57:34.215] RegisterVar START - VarList[1]: recordid
-[2025-06-20 16:57:34.215] RegisterVar START - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.215] RegisterVar START - VarList[3]: username
-[2025-06-20 16:57:34.215] RegisterVar START - VarList[4]: company
-[2025-06-20 16:57:34.215] RegisterVar - Registered successfully
-[2025-06-20 16:57:34.215] RegisterVar END - VarList Count: 6
-[2025-06-20 16:57:34.215] RegisterVar END - VarList[0]: approvalno
-[2025-06-20 16:57:34.216] RegisterVar END - VarList[1]: recordid
-[2025-06-20 16:57:34.216] RegisterVar END - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.216] RegisterVar END - VarList[3]: username
-[2025-06-20 16:57:34.216] RegisterVar END - VarList[4]: company
-[2025-06-20 16:57:34.216] RegisterVar END - VarList[5]: location
-[2025-06-20 16:57:34.216] === RegisterVar completed ===
-[2025-06-20 16:57:34.217] === RegisterVar called ===
-[2025-06-20 16:57:34.218] RegisterVar - Name: year, Type: n, Value: 2025
-[2025-06-20 16:57:34.218] RegisterVar START - VarList Count: 6
-[2025-06-20 16:57:34.218] RegisterVar START - VarList[0]: approvalno
-[2025-06-20 16:57:34.218] RegisterVar START - VarList[1]: recordid
-[2025-06-20 16:57:34.219] RegisterVar START - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.219] RegisterVar START - VarList[3]: username
-[2025-06-20 16:57:34.219] RegisterVar START - VarList[4]: company
-[2025-06-20 16:57:34.219] RegisterVar START - VarList[5]: location
-[2025-06-20 16:57:34.220] RegisterVar - Registered successfully
-[2025-06-20 16:57:34.220] RegisterVar END - VarList Count: 7
-[2025-06-20 16:57:34.220] RegisterVar END - VarList[0]: approvalno
-[2025-06-20 16:57:34.220] RegisterVar END - VarList[1]: recordid
-[2025-06-20 16:57:34.221] RegisterVar END - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.221] RegisterVar END - VarList[3]: username
-[2025-06-20 16:57:34.221] RegisterVar END - VarList[4]: company
-[2025-06-20 16:57:34.221] RegisterVar END - VarList[5]: location
-[2025-06-20 16:57:34.222] RegisterVar END - VarList[6]: year
-[2025-06-20 16:57:34.222] === RegisterVar completed ===
-[2025-06-20 16:57:34.222] === Eval called ===
-[2025-06-20 16:57:34.222] Eval - Input expression: iif(username={karthik},"Logged in user Karthik","Invalid user")
-[2025-06-20 16:57:34.222] Eval START - VarList Count: 7
-[2025-06-20 16:57:34.222] Eval START - VarList[0]: approvalno
-[2025-06-20 16:57:34.222] Eval START - VarList[1]: recordid
-[2025-06-20 16:57:34.222] Eval START - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.222] Eval START - VarList[3]: username
-[2025-06-20 16:57:34.222] Eval START - VarList[4]: company
-[2025-06-20 16:57:34.223] Eval START - VarList[5]: location
-[2025-06-20 16:57:34.223] Eval START - VarList[6]: year
-[2025-06-20 16:57:34.223] Eval - Evaluation successful: Logged in user Karthik
-[2025-06-20 16:57:34.224] Eval END - VarList Count: 7
-[2025-06-20 16:57:34.224] Eval END - VarList[0]: approvalno
-[2025-06-20 16:57:34.224] Eval END - VarList[1]: recordid
-[2025-06-20 16:57:34.224] Eval END - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.225] Eval END - VarList[3]: username
-[2025-06-20 16:57:34.225] Eval END - VarList[4]: company
-[2025-06-20 16:57:34.225] Eval END - VarList[5]: location
-[2025-06-20 16:57:34.225] Eval END - VarList[6]: year
-[2025-06-20 16:57:34.225] Eval - Final output: Logged in user Karthik
-[2025-06-20 16:57:34.225] *** RESET PARSER CALLED ***
-[2025-06-20 16:57:34.225] RESET START - VarList Count: 7
-[2025-06-20 16:57:34.225] RESET START - VarList[0]: approvalno
-[2025-06-20 16:57:34.225] RESET START - VarList[1]: recordid
-[2025-06-20 16:57:34.225] RESET START - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.226] RESET START - VarList[3]: username
-[2025-06-20 16:57:34.226] RESET START - VarList[4]: company
-[2025-06-20 16:57:34.226] RESET START - VarList[5]: location
-[2025-06-20 16:57:34.226] RESET START - VarList[6]: year
-[2025-06-20 16:57:34.226] RESET - Freeing existing parser
-[2025-06-20 16:57:34.226] RESET - Existing parser freed successfully
-[2025-06-20 16:57:34.226] RESET - New parser created successfully
-[2025-06-20 16:57:34.226] RESET END - VarList Count: 3
-[2025-06-20 16:57:34.226] RESET END - VarList[0]: approvalno
-[2025-06-20 16:57:34.226] RESET END - VarList[1]: recordid
-[2025-06-20 16:57:34.226] RESET END - VarList[2]: approvalstatus
-[2025-06-20 16:57:34.226] *** RESET PARSER COMPLETED ***
-[2025-06-20 16:57:34.226] Eval - ResetParser completed
-[2025-06-20 16:57:34.226] === Eval completed ===
-[2025-06-20 16:58:16.587] === RegisterVar called ===
-[2025-06-20 16:58:16.587] RegisterVar - Name: username, Type: c, Value: admin
-[2025-06-20 16:58:16.587] RegisterVar START - VarList Count: 3
-[2025-06-20 16:58:16.587] RegisterVar START - VarList[0]: approvalno
-[2025-06-20 16:58:16.587] RegisterVar START - VarList[1]: recordid
-[2025-06-20 16:58:16.587] RegisterVar START - VarList[2]: approvalstatus
-[2025-06-20 16:58:16.587] RegisterVar - Registered successfully
-[2025-06-20 16:58:16.587] RegisterVar END - VarList Count: 4
-[2025-06-20 16:58:16.587] RegisterVar END - VarList[0]: approvalno
-[2025-06-20 16:58:16.587] RegisterVar END - VarList[1]: recordid
-[2025-06-20 16:58:16.589] RegisterVar END - VarList[2]: approvalstatus
-[2025-06-20 16:58:16.589] RegisterVar END - VarList[3]: username
-[2025-06-20 16:58:16.589] === RegisterVar completed ===
-[2025-06-20 16:58:16.589] === Eval called ===
-[2025-06-20 16:58:16.589] Eval - Input expression: firesql({mysql1},{select role from axusers where username='{username}'})
-[2025-06-20 16:58:16.589] Eval START - VarList Count: 4
-[2025-06-20 16:58:16.589] Eval START - VarList[0]: approvalno
-[2025-06-20 16:58:16.589] Eval START - VarList[1]: recordid
-[2025-06-20 16:58:16.589] Eval START - VarList[2]: approvalstatus
-[2025-06-20 16:58:16.589] Eval START - VarList[3]: username
-[2025-06-20 16:58:16.589] Eval - Parsed SQLName: mysql1
-[2025-06-20 16:58:16.590] Eval - Parsed SQLText: select role from axusers where username='{username}'
-[2025-06-20 16:58:16.593] Eval - FireSql result: {mysql1},{select role from axusers where username='{username}'} | cometime: 2025-06-20 16:58:16
-[2025-06-20 16:58:16.593] Eval END - VarList Count: 4
-[2025-06-20 16:58:16.593] Eval END - VarList[0]: approvalno
-[2025-06-20 16:58:16.593] Eval END - VarList[1]: recordid
-[2025-06-20 16:58:16.593] Eval END - VarList[2]: approvalstatus
-[2025-06-20 16:58:16.593] Eval END - VarList[3]: username
-[2025-06-20 16:58:16.593] Eval - Final output: {mysql1},{select role from axusers where username='{username}'} | cometime: 2025-06-20 16:58:16
-[2025-06-20 16:58:16.594] *** RESET PARSER CALLED ***
-[2025-06-20 16:58:16.594] RESET START - VarList Count: 4
-[2025-06-20 16:58:16.594] RESET START - VarList[0]: approvalno
-[2025-06-20 16:58:16.594] RESET START - VarList[1]: recordid
-[2025-06-20 16:58:16.594] RESET START - VarList[2]: approvalstatus
-[2025-06-20 16:58:16.594] RESET START - VarList[3]: username
-[2025-06-20 16:58:16.594] RESET - Freeing existing parser
-[2025-06-20 16:58:16.594] RESET - Existing parser freed successfully
-[2025-06-20 16:58:16.595] RESET - New parser created successfully
-[2025-06-20 16:58:16.595] RESET END - VarList Count: 3
-[2025-06-20 16:58:16.595] RESET END - VarList[0]: approvalno
-[2025-06-20 16:58:16.595] RESET END - VarList[1]: recordid
-[2025-06-20 16:58:16.595] RESET END - VarList[2]: approvalstatus
-[2025-06-20 16:58:16.595] *** RESET PARSER COMPLETED ***
-[2025-06-20 16:58:16.595] Eval - ResetParser completed
-[2025-06-20 16:58:16.595] === Eval completed ===
-[2025-06-20 17:52:47.462] *** CLEANUP PARSER CALLED ***
-[2025-06-20 17:52:47.469] CLEANUP START - VarList Count: 3
-[2025-06-20 17:52:47.469] CLEANUP START - VarList[0]: approvalno
-[2025-06-20 17:52:47.469] CLEANUP START - VarList[1]: recordid
-[2025-06-20 17:52:47.469] CLEANUP START - VarList[2]: approvalstatus
-[2025-06-20 17:52:47.471] CLEANUP - Parser freed
-[2025-06-20 17:52:47.471] *** CLEANUP PARSER COMPLETED ***
-[2025-06-20 17:53:30.377] DLL INIT - Parser created
-[2025-06-20 17:53:30.380] DLL INIT - VarList Count: 3
-[2025-06-20 17:53:30.380] DLL INIT - VarList[0]: approvalno
-[2025-06-20 17:53:30.380] DLL INIT - VarList[1]: recordid
-[2025-06-20 17:53:30.381] DLL INIT - VarList[2]: approvalstatus
-[2025-06-20 17:53:30.381] *** DLL INITIALIZATION COMPLETED ***
-[2025-06-20 17:53:30.381] === Eval called ===
-[2025-06-20 17:53:30.381] Eval - Input expression: firesql({mysql1},{select username from axusers})
-[2025-06-20 17:53:30.381] Eval START - VarList Count: 3
-[2025-06-20 17:53:30.381] Eval START - VarList[0]: approvalno
-[2025-06-20 17:53:30.381] Eval START - VarList[1]: recordid
-[2025-06-20 17:53:30.381] Eval START - VarList[2]: approvalstatus
-[2025-06-20 17:53:30.411] Eval - Evaluation successful: 
-[2025-06-20 17:53:30.412] Eval - Output was empty
-[2025-06-20 17:53:30.412] Eval END - VarList Count: 3
-[2025-06-20 17:53:30.412] Eval END - VarList[0]: approvalno
-[2025-06-20 17:53:30.412] Eval END - VarList[1]: recordid
-[2025-06-20 17:53:30.412] Eval END - VarList[2]: approvalstatus
-[2025-06-20 17:53:30.412] Eval - Final output: No result.
-[2025-06-20 17:53:30.413] *** RESET PARSER CALLED ***
-[2025-06-20 17:53:30.413] RESET START - VarList Count: 3
-[2025-06-20 17:53:30.413] RESET START - VarList[0]: approvalno
-[2025-06-20 17:53:30.413] RESET START - VarList[1]: recordid
-[2025-06-20 17:53:30.419] RESET START - VarList[2]: approvalstatus
-[2025-06-20 17:53:30.421] RESET - Freeing existing parser
-[2025-06-20 17:53:30.422] RESET - Existing parser freed successfully
-[2025-06-20 17:53:30.424] RESET - New parser created successfully
-[2025-06-20 17:53:30.424] RESET END - VarList Count: 3
-[2025-06-20 17:53:30.424] RESET END - VarList[0]: approvalno
-[2025-06-20 17:53:30.424] RESET END - VarList[1]: recordid
-[2025-06-20 17:53:30.424] RESET END - VarList[2]: approvalstatus
-[2025-06-20 17:53:30.424] *** RESET PARSER COMPLETED ***
-[2025-06-20 17:53:30.424] Eval - ResetParser completed
-[2025-06-20 17:53:30.424] === Eval completed ===
-[2025-06-20 17:58:26.891] *** CLEANUP PARSER CALLED ***
-[2025-06-20 17:58:26.895] CLEANUP START - VarList Count: 3
-[2025-06-20 17:58:26.896] CLEANUP START - VarList[0]: approvalno
-[2025-06-20 17:58:26.897] CLEANUP START - VarList[1]: recordid
-[2025-06-20 17:58:26.898] CLEANUP START - VarList[2]: approvalstatus
-[2025-06-20 17:58:26.903] CLEANUP - Parser freed
-[2025-06-20 17:58:26.903] *** CLEANUP PARSER COMPLETED ***
-[2025-07-09 18:23:02.563] DLL INIT - Parser created
-[2025-07-09 18:23:02.570] DLL INIT - VarList Count: 3
-[2025-07-09 18:23:02.570] DLL INIT - VarList[0]: approvalno
-[2025-07-09 18:23:02.570] DLL INIT - VarList[1]: recordid
-[2025-07-09 18:23:02.570] DLL INIT - VarList[2]: approvalstatus
-[2025-07-09 18:23:02.570] *** DLL INITIALIZATION COMPLETED ***
-[2025-07-09 18:23:02.570] === RegisterVar called ===
-[2025-07-09 18:23:02.570] RegisterVar - Name: username, Type: c, Value: admin
-[2025-07-09 18:23:02.572] RegisterVar START - VarList Count: 3
-[2025-07-09 18:23:02.572] RegisterVar START - VarList[0]: approvalno
-[2025-07-09 18:23:02.572] RegisterVar START - VarList[1]: recordid
-[2025-07-09 18:23:02.572] RegisterVar START - VarList[2]: approvalstatus
-[2025-07-09 18:23:02.572] RegisterVar - Registered successfully
-[2025-07-09 18:23:02.572] RegisterVar END - VarList Count: 4
-[2025-07-09 18:23:02.573] RegisterVar END - VarList[0]: approvalno
-[2025-07-09 18:23:02.573] RegisterVar END - VarList[1]: recordid
-[2025-07-09 18:23:02.573] RegisterVar END - VarList[2]: approvalstatus
-[2025-07-09 18:23:02.573] RegisterVar END - VarList[3]: username
-[2025-07-09 18:23:02.573] === RegisterVar completed ===
-[2025-07-09 18:23:02.573] === RegisterVar called ===
-[2025-07-09 18:23:02.573] RegisterVar - Name: company, Type: c, Value: agile
-[2025-07-09 18:23:02.573] RegisterVar START - VarList Count: 4
-[2025-07-09 18:23:02.573] RegisterVar START - VarList[0]: approvalno
-[2025-07-09 18:23:02.573] RegisterVar START - VarList[1]: recordid
-[2025-07-09 18:23:02.573] RegisterVar START - VarList[2]: approvalstatus
-[2025-07-09 18:23:02.573] RegisterVar START - VarList[3]: username
-[2025-07-09 18:23:02.573] RegisterVar - Registered successfully
-[2025-07-09 18:23:02.573] RegisterVar END - VarList Count: 5
-[2025-07-09 18:23:02.573] RegisterVar END - VarList[0]: approvalno
-[2025-07-09 18:23:02.573] RegisterVar END - VarList[1]: recordid
-[2025-07-09 18:23:02.573] RegisterVar END - VarList[2]: approvalstatus
-[2025-07-09 18:23:02.573] RegisterVar END - VarList[3]: username
-[2025-07-09 18:23:02.573] RegisterVar END - VarList[4]: company
-[2025-07-09 18:23:02.573] === RegisterVar completed ===
-[2025-07-09 18:23:02.573] === RegisterVar called ===
-[2025-07-09 18:23:02.574] RegisterVar - Name: year, Type: n, Value: 2025
-[2025-07-09 18:23:02.574] RegisterVar START - VarList Count: 5
-[2025-07-09 18:23:02.574] RegisterVar START - VarList[0]: approvalno
-[2025-07-09 18:23:02.574] RegisterVar START - VarList[1]: recordid
-[2025-07-09 18:23:02.574] RegisterVar START - VarList[2]: approvalstatus
-[2025-07-09 18:23:02.574] RegisterVar START - VarList[3]: username
-[2025-07-09 18:23:02.574] RegisterVar START - VarList[4]: company
-[2025-07-09 18:23:02.574] RegisterVar - Registered successfully
-[2025-07-09 18:23:02.574] RegisterVar END - VarList Count: 6
-[2025-07-09 18:23:02.574] RegisterVar END - VarList[0]: approvalno
-[2025-07-09 18:23:02.574] RegisterVar END - VarList[1]: recordid
-[2025-07-09 18:23:02.574] RegisterVar END - VarList[2]: approvalstatus
-[2025-07-09 18:23:02.574] RegisterVar END - VarList[3]: username
-[2025-07-09 18:23:02.574] RegisterVar END - VarList[4]: company
-[2025-07-09 18:23:02.574] RegisterVar END - VarList[5]: year
-[2025-07-09 18:23:02.574] === RegisterVar completed ===
-[2025-07-09 18:23:02.579] === Eval called ===
-[2025-07-09 18:23:02.582] Eval - Input expression: firesql({getmailid},{select email from axusers where username = :username});sqlgetvalue({getmailid},{email});
-[2025-07-09 18:23:02.589] Eval - SQLName: getmailid
-[2025-07-09 18:23:02.589] Eval - SQLText: select email from axusers where username = :username
-[2025-07-09 18:23:02.589] Eval - FieldName: email
-[2025-07-09 18:23:02.758] Eval - Final Output: user2@example.com
-[2025-07-09 18:23:02.761] Eval - Response sent
-[2025-07-09 20:19:04.063] *** CLEANUP PARSER CALLED ***
-[2025-07-09 20:19:04.096] CLEANUP START - VarList Count: 6
-[2025-07-09 20:19:04.097] CLEANUP START - VarList[0]: approvalno
-[2025-07-09 20:19:04.097] CLEANUP START - VarList[1]: recordid
-[2025-07-09 20:19:04.097] CLEANUP START - VarList[2]: approvalstatus
-[2025-07-09 20:19:04.097] CLEANUP START - VarList[3]: username
-[2025-07-09 20:19:04.097] CLEANUP START - VarList[4]: company
-[2025-07-09 20:19:04.097] CLEANUP START - VarList[5]: year
-[2025-07-09 20:19:04.136] CLEANUP - Parser freed
-[2025-07-09 20:19:04.140] *** CLEANUP PARSER COMPLETED ***
+[2025-07-11 10:06:47.816] DLL INIT - Parser created
+[2025-07-11 10:06:47.826] DLL INIT - VarList Count: 3
+[2025-07-11 10:06:47.826] DLL INIT - VarList[0]: approvalno
+[2025-07-11 10:06:47.826] DLL INIT - VarList[1]: recordid
+[2025-07-11 10:06:47.826] DLL INIT - VarList[2]: approvalstatus
+[2025-07-11 10:06:47.826] *** DLL INITIALIZATION COMPLETED ***
+[2025-07-11 10:06:47.826] === RegisterVar called ===
+[2025-07-11 10:06:47.826] RegisterVar - Name: username, Type: c, Value: admin
+[2025-07-11 10:06:47.826] RegisterVar START - VarList Count: 3
+[2025-07-11 10:06:47.826] RegisterVar START - VarList[0]: approvalno
+[2025-07-11 10:06:47.826] RegisterVar START - VarList[1]: recordid
+[2025-07-11 10:06:47.826] RegisterVar START - VarList[2]: approvalstatus
+[2025-07-11 10:06:47.826] RegisterVar - Registered successfully
+[2025-07-11 10:06:47.826] RegisterVar END - VarList Count: 4
+[2025-07-11 10:06:47.826] RegisterVar END - VarList[0]: approvalno
+[2025-07-11 10:06:47.826] RegisterVar END - VarList[1]: recordid
+[2025-07-11 10:06:47.826] RegisterVar END - VarList[2]: approvalstatus
+[2025-07-11 10:06:47.827] RegisterVar END - VarList[3]: username
+[2025-07-11 10:06:47.827] === RegisterVar completed ===
+[2025-07-11 10:06:47.827] === RegisterVar called ===
+[2025-07-11 10:06:47.827] RegisterVar - Name: company, Type: c, Value: agile
+[2025-07-11 10:06:47.827] RegisterVar START - VarList Count: 4
+[2025-07-11 10:06:47.827] RegisterVar START - VarList[0]: approvalno
+[2025-07-11 10:06:47.827] RegisterVar START - VarList[1]: recordid
+[2025-07-11 10:06:47.827] RegisterVar START - VarList[2]: approvalstatus
+[2025-07-11 10:06:47.827] RegisterVar START - VarList[3]: username
+[2025-07-11 10:06:47.827] RegisterVar - Registered successfully
+[2025-07-11 10:06:47.827] RegisterVar END - VarList Count: 5
+[2025-07-11 10:06:47.827] RegisterVar END - VarList[0]: approvalno
+[2025-07-11 10:06:47.827] RegisterVar END - VarList[1]: recordid
+[2025-07-11 10:06:47.827] RegisterVar END - VarList[2]: approvalstatus
+[2025-07-11 10:06:47.827] RegisterVar END - VarList[3]: username
+[2025-07-11 10:06:47.827] RegisterVar END - VarList[4]: company
+[2025-07-11 10:06:47.827] === RegisterVar completed ===
+[2025-07-11 10:06:47.827] === RegisterVar called ===
+[2025-07-11 10:06:47.827] RegisterVar - Name: year, Type: n, Value: 2025
+[2025-07-11 10:06:47.827] RegisterVar START - VarList Count: 5
+[2025-07-11 10:06:47.827] RegisterVar START - VarList[0]: approvalno
+[2025-07-11 10:06:47.827] RegisterVar START - VarList[1]: recordid
+[2025-07-11 10:06:47.827] RegisterVar START - VarList[2]: approvalstatus
+[2025-07-11 10:06:47.828] RegisterVar START - VarList[3]: username
+[2025-07-11 10:06:47.828] RegisterVar START - VarList[4]: company
+[2025-07-11 10:06:47.828] RegisterVar - Registered successfully
+[2025-07-11 10:06:47.828] RegisterVar END - VarList Count: 6
+[2025-07-11 10:06:47.828] RegisterVar END - VarList[0]: approvalno
+[2025-07-11 10:06:47.828] RegisterVar END - VarList[1]: recordid
+[2025-07-11 10:06:47.828] RegisterVar END - VarList[2]: approvalstatus
+[2025-07-11 10:06:47.828] RegisterVar END - VarList[3]: username
+[2025-07-11 10:06:47.828] RegisterVar END - VarList[4]: company
+[2025-07-11 10:06:47.828] RegisterVar END - VarList[5]: year
+[2025-07-11 10:06:47.828] === RegisterVar completed ===
+[2025-07-11 10:06:47.830] === Eval called ===
+[2025-07-11 10:06:47.831] Eval - Input expression: firesql({getmailid},{select email from axusers where username = :username});sqlgetvalue({getmailid},{email});
+[2025-07-11 10:06:47.831] Eval - SQLName: getmailid
+[2025-07-11 10:06:47.831] Eval - SQLText: select email from axusers where username = :username
+[2025-07-11 10:06:47.831] Eval - FieldName: email
+[2025-07-11 10:06:47.855] Eval - Final Output: user2@example.com
+[2025-07-11 10:06:47.855] Eval - Response sent
+[2025-07-11 11:15:05.863] *** CLEANUP PARSER CALLED ***
+[2025-07-11 11:15:05.878] CLEANUP START - VarList Count: 6
+[2025-07-11 11:15:05.879] CLEANUP START - VarList[0]: approvalno
+[2025-07-11 11:15:05.880] CLEANUP START - VarList[1]: recordid
+[2025-07-11 11:15:05.880] CLEANUP START - VarList[2]: approvalstatus
+[2025-07-11 11:15:05.880] CLEANUP START - VarList[3]: username
+[2025-07-11 11:15:05.880] CLEANUP START - VarList[4]: company
+[2025-07-11 11:15:05.880] CLEANUP START - VarList[5]: year
+[2025-07-11 11:15:05.899] CLEANUP - Parser freed
+[2025-07-11 11:15:05.899] *** CLEANUP PARSER COMPLETED ***
